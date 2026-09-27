@@ -1,0 +1,50 @@
+{
+  "name": "mmm-swissdepartures",
+  "version": "1.0.0",
+  "description": "Compact Swiss public-transport departures for MagicMirror²: next catchable trains, trams and buses per direction with delays and when to leave, from the search.ch timetable API",
+  "main": "MMM-SwissDepartures.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node scripts/check.js",
+    "demo": "node demo/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkubicek/MMM-SwissDepartures.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mkubicek/MMM-SwissDepartures/issues"
+  },
+  "homepage": "https://github.com/mkubicek/MMM-SwissDepartures#readme",
+  "keywords": [
+    "magicmirror",
+    "magicmirror-module",
+    "magicmirror2",
+    "public-transport",
+    "departures",
+    "timetable",
+    "switzerland",
+    "sbb",
+    "zvv",
+    "search.ch"
+  ],
+  "author": "Milan Kubicek",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "files": [
+    "MMM-SwissDepartures.js",
+    "MMM-SwissDepartures.css",
+    "departures.js",
+    "feed.js",
+    "node_helper.js",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "acorn": "^8.15.0"
+  }
+}

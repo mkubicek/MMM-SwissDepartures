@@ -1,0 +1,18 @@
+.MMM-SwissDepartures .swiss-departures { width: 365px; max-width: 100%; text-align: left; font-size: 16px; line-height: 1.25; color: #eee; }
+/* One line per direction: line · destination · next two catchable departures · when to leave */
+.MMM-SwissDepartures .sd-row { display: grid; grid-template-columns: 24px minmax(0, 1fr) 78px 90px 64px; align-items: baseline; column-gap: 6px; padding: 2px 0; }
+.MMM-SwissDepartures .sd-line { font-weight: 600; font-size: 14px; }
+.MMM-SwissDepartures .sd-label { color: #bbb; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* Fixed time and minutes columns keep the times aligned whether or not a delay is shown. */
+.MMM-SwissDepartures .sd-dep { display: grid; grid-template-columns: 54px 24px; align-items: baseline; font-size: 18px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.MMM-SwissDepartures .sd-min { grid-column: 2; grid-row: 1; text-align: right; font-size: 13px; color: #999; }
+.MMM-SwissDepartures .sd-later { color: #999; font-size: 16px; justify-content: end; }
+.MMM-SwissDepartures .sd-later .sd-min { color: #777; }
+.MMM-SwissDepartures .sd-clock { grid-column: 1; grid-row: 1; }
+.MMM-SwissDepartures .sd-dep sup { grid-column: 1; grid-row: 1; justify-self: end; align-self: start; font-size: 10px; line-height: 1; }
+.MMM-SwissDepartures .sd-leave { text-align: right; white-space: nowrap; font-size: 12px; color: #999; }
+.MMM-SwissDepartures .sd-now { color: #ffb16e; }
+.MMM-SwissDepartures .sd-meta { grid-column: 3 / -1; text-align: right; font-size: 12px; color: #888; }
+.MMM-SwissDepartures .sd-health { margin-top: 3px; font-size: 11px; text-align: right; }
+.MMM-SwissDepartures .sd-warning { color: #ffb16e; }
+.MMM-SwissDepartures .sd-cancelled { text-decoration: line-through; color: #888; }
